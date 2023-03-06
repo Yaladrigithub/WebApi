@@ -17,9 +17,15 @@ namespace WebApiproject1.Controllers
         private loginfromwebEntities2 db = new loginfromwebEntities2();
 
         // GET: api/loginuser1
-        public IQueryable<loginuser1> Getloginuser1()
+        public IQueryable Getloginuser1()
         {
-            return db.loginuser1;
+            List<string> l = new List<string>();
+            l.Add("rk");
+            l.Add("Yaldri");
+            l.Add("Veera anna");
+
+            return l.AsQueryable();
+
         }
 
         // GET: api/loginuser1/5
