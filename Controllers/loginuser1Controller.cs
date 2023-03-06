@@ -14,7 +14,7 @@ namespace WebApiproject1.Controllers
 {
     public class loginuser1Controller : ApiController
     {
-        private loginfromwebEntities2 db = new loginfromwebEntities2();
+        private loginfromwebEntities2 db ;
 
         // GET: api/loginuser1
         public IQueryable Getloginuser1()
